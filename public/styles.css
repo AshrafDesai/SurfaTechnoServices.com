@@ -1,0 +1,365 @@
+/* General body and section styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+header {
+    background: linear-gradient(90deg, #3c3c3c, #555); /* Darker gradient for header */
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    margin-bottom: 1.5em; /* Add space below header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Logo styling */
+header .logo {
+    max-width: 150px; /* Set a maximum width for the logo */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Center the logo in the header */
+    margin: 0 auto;   /* Center logo */
+}
+
+/* Navigation styles */
+nav {
+    padding: 0.5em 0; /* Add padding for the navbar */
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
+}
+
+nav a:hover {
+    color: #ddd;
+    transform: scale(1.05); /* Slight enlargement on hover for emphasis */
+}
+
+/* Section styling */
+section {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 2em auto; /* Centered with margin */
+    background-color: #fff; /* White background for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for sections */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #e9ecef; /* Light background */
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em; /* Space below hero section */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.hero h2 {
+    font-size: 2.5em; /* Increased font size for visibility */
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for readability */
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.8em 2em;
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* About section preview */
+.about-preview {
+    background-color: #fff;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Link button styling */
+.link-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    color: #333;
+    background-color: #f8f9fa; /* Light background */
+    border: 1px solid #007bff; /* Bootstrap primary color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transform */
+}
+
+.link-button:hover {
+    color: #fff;
+    background-color: #007bff; /* Bootstrap primary color */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Services Overview Section */
+.services-overview {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em; /* Space below services section */
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.service-card {
+    flex: 1 1 calc(33% - 1em);
+    box-sizing: border-box;
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h4 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Brand Partners Section */
+.brands-preview {
+    background-color: #fff;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em; /* Space below brands section */
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.brand-logos img {
+    max-width: 150px; /* Set a maximum width for brand logos */
+    height: auto;
+    padding: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em; /* Space below testimonials section */
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.testimonial-card {
+    flex: 1 1 calc(50% - 1em);
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: left;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.testimonial-card h4 {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em; /* Space below CTA section */
+}
+
+.cta h2 {
+    font-size: 2.5em; /* Increased font size for emphasis */
+    margin-bottom: 0.5em;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+.brand-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items in the gallery */
+    gap: 1.5em; /* Space between images */
+}
+
+.brand-gallery img {
+    max-width: 200px; /* Set a maximum width for brand images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.brand-gallery img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+.service-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items */
+    gap: 1.5em; /* Space between images */
+    padding: 2em 0; /* Padding around the gallery */
+}
+
+.service-gallery img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Set a maximum width for images */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.service-gallery img:hover {
+    transform: scale(1.05); /* Slight enlargement on hover for emphasis */
+}
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em; /* Space above footer */
+}
+
+/* Footer Image Styles */
+footer img {
+    max-width: 40px; /* Set maximum width for footer images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Space between images */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+footer img:hover {
+    transform: scale(1.1); /* Slight enlargement on hover for emphasis */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin: 10px 0 5px; /* Spacing around labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for inputs */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    padding: 10px; /* Padding inside button */
+    background-color: #2980b9; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(100% - 1em); /* Stack cards in mobile */
+    }
+
+    .testimonial-card {
+        flex: 1 1 calc(100% - 1em); /* Stack testimonial cards in mobile */
+    }
+
+    header .logo {
+        max-width: 120px; /* Smaller size on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        max-width: 100px; /* Even smaller size on mobile */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Adjust hero text size */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust hero paragraph size */
+    }
+}
