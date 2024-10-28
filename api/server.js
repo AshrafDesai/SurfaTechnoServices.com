@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Endpoint to send email
-app.post('/send-email', (req, res) => {
+app.post('/api/server.js', (req, res) => {
     const { name, email, message } = req.body;
 
     const mailOptions = {
