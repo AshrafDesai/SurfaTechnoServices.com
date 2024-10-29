@@ -293,47 +293,38 @@ footer img:hover {
     transform: scale(1.1); /* Slight enlargement on hover for emphasis */
 }
 
-form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-}
-
-label {
-    margin: 10px 0 5px; /* Spacing around labels */
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px; /* Padding inside input fields */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 4px; /* Rounded corners */
-    font-size: 16px; /* Font size for inputs */
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #2980b9; /* Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
-button {
-    padding: 10px; /* Padding inside button */
-    background-color: #2980b9; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners for button */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size for button */
-    margin-top: 10px; /* Space above button */
-    transition: background-color 0.3s; /* Smooth background transition */
-}
-
-button:hover {
-    background-color: #3498db; /* Lighter blue on hover */
-}
-
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #1141bb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
