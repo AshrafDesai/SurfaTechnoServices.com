@@ -259,6 +259,7 @@ section {
     justify-content: center; /* Center items */
     gap: 1.5em; /* Space between images */
     padding: 2em 0; /* Padding around the gallery */
+    text-align: center;
 }
 
 .service-gallery img {
@@ -269,6 +270,7 @@ section {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.3s; /* Smooth scaling effect */
+    
 }
 
 .service-gallery img:hover {
@@ -281,6 +283,7 @@ footer {
     background-color: #333;
     color: #fff;
     margin-top: 2em; /* Space above footer */
+    
 }
 
 /* Footer Image Styles */
